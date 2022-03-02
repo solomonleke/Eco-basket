@@ -2,9 +2,10 @@ import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   fonts: {
-    heading: "'Lexend', sans-serif",
-    body: "'Lexend', sans-serif",
+    heading: "Helvetica Neue",
+    body: "Helvetica Neue",
   },
+
   colors: {
     blue: {
       blue500: '#211f5c',
@@ -34,10 +35,10 @@ const theme = extendTheme({
       gray200: '#C0C0C1',
       gray100: '#E7E8E9',
     },
-    background: '#EEF3FF',
+    background: '#C4C4C4',
     green: '#38890B',
     white: '#FFFFFF',
-    black: '#292F33',
+    black: '#000000',
   },
   initialColorMode: 'light',
   useSystemColorMode: false,

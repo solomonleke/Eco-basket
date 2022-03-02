@@ -2,10 +2,10 @@ import React from 'react'
 import { Helmet } from 'react-helmet';
 
 
-export default function Seo({title = 'Dashboard', description = 'Title.'}) {
+export default function Seo({title = 'Noah Adeleke', description = 'Title.'}) {
   return (
     <Helmet>
-        <title>Title — {title}</title>
+        <title>Noah Adeleke — {title}</title>
         <meta name="title" content={`Title — ${title}`} />
         <meta name="description" content={description} />
 

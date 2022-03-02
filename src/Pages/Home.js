@@ -1,3 +1,4 @@
+import { Text } from '@chakra-ui/react'
 import React from 'react'
 import MainLayout from '../Layouts/Index'
 import Request from '../Utils/Request'
@@ -10,10 +11,10 @@ export default function Home() {
     // }
     
   return (
-        <MainLayout pageTitle='eco-basket'>
-            <Seo title='Home' description='HomePage'/>
+        <MainLayout>
+            <Seo title='eco-basket' description='eco-basket'/>
         
-          
+            <Text>sdkbcsdkcn</Text>
         </MainLayout>
   )
 }

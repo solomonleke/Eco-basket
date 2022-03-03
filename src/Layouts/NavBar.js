@@ -31,10 +31,7 @@ export default function NavBar() {
   const [placement, setPlacement] = React.useState("left");
   const navigate = useNavigate()
 
-  const ondo = ()=>{
-    alert("dcjs")
-    alert("dsid")
-  }
+
   const nav = ()=>{
     navigate("/eco-basket")
   }
@@ -53,13 +50,13 @@ export default function NavBar() {
           <Image src="/logo.png" alt="Dan Abramov" />
         </Box>
         <Spacer />
-        <HStack w="lg" spacing={"62px"}>
+        <HStack w="645px" spacing={"105px"}>
         
           <Text
           onClick={nav}
           fontWeight={"200"}
           lineHeight="30px"
-          color="gray.gray400"
+          color="#000000"
           fontSize={"25px"}
         >
           About
@@ -69,7 +66,7 @@ export default function NavBar() {
           <Text
             fontWeight={"200"}
             lineHeight="30px"
-            color="gray.gray400"
+            color="#000000"
             fontSize={"25px"}
           >
           <LinkBox as={Link} to="/eco-basket">
@@ -80,7 +77,7 @@ export default function NavBar() {
           <Text
             fontWeight={"200"}
             lineHeight="30px"
-            color="gray.gray400"
+            color="#000000"
             fontSize={"25px"}
           >
             Contact

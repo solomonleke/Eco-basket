@@ -5,7 +5,7 @@ import NavBar from './NavBar'
 
 export default function MainLayout({children, bgColor = "white"}) {
   return (
-    <Box position={"relative"}>
+    <Box position={"relative"}  fontFamily= "body">
         <NavBar/>
          
            <Box mt="32px">

@@ -2,10 +2,9 @@ import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   fonts: {
-    heading: "Helvetica Neue",
-    body: "Helvetica Neue",
+    heading: "sans-serif",
+    body: "'Roboto', sans-serif",
   },
-
   colors: {
     blue: {
       blue500: '#211f5c',
@@ -35,7 +34,7 @@ const theme = extendTheme({
       gray200: '#C0C0C1',
       gray100: '#E7E8E9',
     },
-    background: '#C4C4C4',
+    background: 'rgba(242, 242, 242, 0.5)',
     green: '#38890B',
     white: '#FFFFFF',
     black: '#000000',

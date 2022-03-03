@@ -1,7 +1,9 @@
 import {
     Box,
     Center,
+    HStack,
     Image,
+    LinkBox,
     SimpleGrid,
     Spacer,
     Stack,
@@ -10,6 +12,7 @@ import {
 import React from "react";
 import MainLayout from "../Layouts/Index";
 import Seo from "../Utils/Seo";
+import { RiPhoneFill,RiMailFill } from "react-icons/ri";
 
 export default function EcoBasket() {
     return (
@@ -22,7 +25,7 @@ export default function EcoBasket() {
                         ml={{ base: "25px", md: "46px" }}
                         mr={{ base: "25px", md: "46px" }}
                         position={"relative"}
-                        fontSize={{ base: "65px", md: "121px" }}
+                        fontSize={{ base: "55px", md: "121px" }}
                         textAlign={{ base: "center", md: "left" }}
                         backgroundImage="url('/text-bg.png')"
                         fontWeight="800"
@@ -30,10 +33,10 @@ export default function EcoBasket() {
                     >
                         <Image
                             src="/leaf.png"
-                            w={{ base: "55px", md: "80px" }}
+                            w={{ base: "45px", md: "80px" }}
                             position="absolute"
                             top={{ base: "2px", md: "15px" }}
-                            left={{ base: "-1px", md: "-15px" }}
+                            left={{ base: "22px", md: "-15px" }}
                         />
                         eco-Basket
                     </Text>
@@ -46,6 +49,7 @@ export default function EcoBasket() {
                     fontSize={{base: "20px", md: "25px"}}
                     fontWeight="700"
                     color={"#595959"}
+                    fontFamily= "body"
                 >
                     About Eco-Basket
                    </Text>
@@ -62,25 +66,25 @@ export default function EcoBasket() {
                        
                     >
                         <Center h={"120px"}>
-                            <Image src="/icon1.png" />
+                            <Image w={{base: "90px", md: "90px"}} src="/icon1.png" />
                         </Center>
                         <Text
                             mt="15px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
                             maxW={{ base: "100%", md: "xs" }}
                         >
-                            Ecobasket provides accessible means of waste disposal.
+                            Ecobasket provides  accessible means of  waste disposal.
                         </Text>
                     </Box>
                     <Box
                        
                     >
                         <Center h={"120px"}>
-                            <Image src="/icon2.png" />
+                            <Image w={{base: "90px", md: "118px"}} src="/icon2.png" />
                         </Center>
                         <Text
                             mt="15px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
                             maxW={{ base: "100%", md: "xs" }}
                         >
                             it also sensitizes people on the need to keep their environment
@@ -91,11 +95,11 @@ export default function EcoBasket() {
                       
                     >
                         <Center h={"120px"}>
-                            <Image src="/icon3.png" />
+                            <Image w={{base: "90px", md: "107px"}} src="/icon3.png" />
                         </Center>
                         <Text
                             mt="15px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
                             maxW={{ base: "100%", md: "xs" }}
                         >
                             ...and it is completely manufactured with recycled waste.
@@ -112,17 +116,17 @@ export default function EcoBasket() {
                 </Box>
             </Stack>
           
-            <Box bgColor={"#F1F9F3"} opacity="1">
+            <Box bg={"#F1F9F3"}   mt={{ base: "152px", md: "105px" }} >
             <Text
-            mt={{ base: "32px", md: "105px" }}
+          
             ml={{ base: "25px", md: "46px" }}
             mr={{ base: "25px", md: "46px" }}
             fontSize={{base: "20px", md: "25px"}}
             fontWeight="700"
             color={"#595959"}
-                position="relative"
+            zIndex={10} pos={"relative"} 
             >
-            <Image src="/glob.png" position={"absolute"} w="271px" zIndex={"21"} bottom="-30"></Image>
+            <Image src="/glob.png" position={"absolute"} w={{base: "250px", md: "271px"}} zIndex={21} bottom="-12"></Image>
             How you Can Support
             </Text>
 
@@ -131,14 +135,14 @@ export default function EcoBasket() {
                     mr={{ base: "25px", md: "46px" }}
                     mt={{ base: "12px", md: "32px" }}
 
-                    p="20px"
+                    pb="20px"
                     spacing="45px"
                     columns={{ base: 1, md: 3 }}
                    
                 >
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon4.png" />
+                            <Image w={{base: "90px", md: "109px"}} src="/icon4.png" />
                         </Center>
                         <Text
                         fontSize={{base: "15px", md: "20px"}}
@@ -157,7 +161,7 @@ export default function EcoBasket() {
                     </Box>
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon5.png" />
+                            <Image  w={{base: "90px", md: "148px"}}  src="/icon5.png" />
                         </Center>
                         <Text
                         fontSize={{base: "15px", md: "20px"}}
@@ -171,12 +175,12 @@ export default function EcoBasket() {
                             textAlign={{ base: "center", md: "center" }}
                            
                         >
-                        You can make donation to this cause and get more Eco-baskets out there. Click here.
+                        You can make donation to this cause and get more Eco-baskets out there.<LinkBox as="span" cursor={"pointer"} color= "blue"> Click here</LinkBox>.
                         </Text>
                     </Box>
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon6.png" />
+                            <Image w={{base: "90px", md: "101px"}} src="/icon6.png" />
                         </Center>
                         <Text
                         fontSize={{base: "15px", md: "20px"}}
@@ -190,24 +194,23 @@ export default function EcoBasket() {
                             textAlign={{ base: "center", md: "center" }}
                            
                         >
-                        You can also request for the full Eco-Basket design for replication of this product at your own location. Click here.
+                        You can also request for the full Eco-Basket design for replication of this product at your own location. <LinkBox as="span" cursor={"pointer"} color= "blue"> Click here</LinkBox>.
                         </Text>
                     </Box>
                 </SimpleGrid>
             </Box>
 
-            <Box bgColor={"#F1F9F3"} opacity="1">
+            <Box bgColor={"#FAFAFA"} opacity="1"  mt={{ base: "152px", md: "205px" }}  zIndex={10} pos={"relative"} >
             <Text
-            mt={{ base: "32px", md: "155px" }}
             ml={{ base: "25px", md: "46px" }}
             mr={{ base: "25px", md: "46px" }}
             fontSize={{base: "30px", md: "45px"}}
             fontSize={{base: "20px", md: "25px"}}
             fontWeight="700"
             color={"#595959"}
-                position="relative"
+            position="relative"
             >
-            <Image src="/glob.png" position={"absolute"} w="271px" zIndex={"21"} bottom="-30"></Image>
+            <Image src="/hand.png" position={"absolute"} w={{base: "250px", md: "271px"}} bottom="-85"  ></Image>
             Proud Sponsors
             </Text>
 
@@ -216,48 +219,99 @@ export default function EcoBasket() {
                     mr={{ base: "25px", md: "46px" }}
                     mt={{ base: "12px", md: "32px" }}
 
-                    p="20px"
+                    pb="20px"
                     spacing="45px"
-                    columns={{ base: 1, md: 3 }}
-                   
+                    columns={{ base: 1, md: 5 }}
+                
                 >
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon4.png" />
+                            <Image src="/oju-res.png" />
                         </Center>
                         <Text
                             mt="20px"
                             textAlign={{ base: "center", md: "center" }}
+                            fontWeight= "700"
+                            fontSize="20px"
+                            color="#000000"
                            
                         >
-                            ...and it is completely manufactured with recycled waste.
+                               Ojuelegba Restaurant
                         </Text>
                     </Box>
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon5.png" />
+                            <Image src="/abe-igi.png" />
                         </Center>
                         <Text
                             mt="20px"
                             textAlign={{ base: "center", md: "center" }}
+                            fontWeight= "700"
+                            fontSize="20px"
+                            color="#000000"
                            
                         >
-                            ...and it is completely manufactured with recycled waste.
+                            Abe-Igi Restaurant
                         </Text>
                     </Box>
                     <Box>
                         <Center h={"140px"}>
-                            <Image src="/icon6.png" />
+                            <Image src="/ope.png" />
                         </Center>
                         <Text
                             mt="20px"
                             textAlign={{ base: "center", md: "center" }}
-                           
+                            fontWeight= "700"
+                            fontSize="20px"
+                            color="#000000"
                         >
-                            ...and it is completely manufactured with recycled waste.
+                           My Humble Self
                         </Text>
                     </Box>
                 </SimpleGrid>
+            </Box>
+          
+            <Box bgColor={"#F1F9F3"}  opacity="1" zIndex={222}   mt={{ base: "152px", md: "205px" }}  pb="20px" >
+            <Text
+            ml={{ base: "25px", md: "46px" }}
+            mr={{ base: "25px", md: "46px" }}
+            fontSize={{base: "30px", md: "45px"}}
+            fontSize={{base: "20px", md: "25px"}}
+            fontWeight="700"
+            color={"#595959"}
+            position="relative"
+            zIndex={21}
+               
+            >
+            <Image src="/leaf3.png" position={"absolute"} w={{base: "250px", md: "300px"}}  bottom="-95" left={"-5"}  ></Image>
+            Contact
+            </Text>
+            
+                <HStack
+                    ml={{ base: "25px", md: "46px" }}
+                    mr={{ base: "25px", md: "46px" }}
+                    mt={{ base: "12px", md: "32px" }}
+                    fontWeight = "300"
+                    color = "#000000"
+                    fontSize={"20px"}
+      
+                >
+                <RiPhoneFill />
+                   <Text>+2348068840125</Text>
+                </HStack>
+            
+                <HStack
+                    ml={{ base: "25px", md: "46px" }}
+                    mr={{ base: "25px", md: "46px" }}
+                    mt={{ base: "12px", md: "12px" }}
+                    fontWeight = "300"
+                    color = "#000000"
+                    fontSize={"20px"}
+      
+                >
+                <RiMailFill/>
+                   <Text>adelekeopeyemi16@yahoo.com</Text>
+                </HStack>
             </Box>
         </MainLayout>
     );

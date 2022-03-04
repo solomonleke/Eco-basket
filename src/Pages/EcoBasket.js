@@ -280,7 +280,7 @@ export default function EcoBasket() {
             fontWeight="700"
             color={"#595959"}
             position="relative"
-            zIndex={21}
+            
                
             >
             <Image src="/leaf3.png" position={"absolute"} w={{base: "250px", md: "300px"}}  bottom="-95" left={"-5"}  ></Image>

@@ -5,16 +5,19 @@ import NavBar from './NavBar'
 
 export default function MainLayout({children, bgColor = "white"}) {
   return (
-    <Box position={"relative"}  fontFamily= "body">
-        <NavBar/>
-         
-           <Box mt="32px">
-           <Image src="/front-cuv.png" display={{base: "none", md: "block"}} alt=""  position={"absolute"} right="0" top="0" />
-           <Image src="/back-cuv.png" display={{base: "none", md: "block"}} alt="" position={"absolute"} right="0" top="0" />
-              {children}
-           </Box>
-            
-        <Footer/>
-    </Box>
+    <Container maxWidth={{base:"100%", md:"1400"}}>
+    <Box position={"relative"}   fontFamily= "body">
+    <NavBar/>
+     
+       <Box mt="32px">
+       <Image src="/front-cuv.png" display={{base: "none", md: "block"}} alt=""  position={"absolute"} right="0" top="0" />
+       <Image src="/back-cuv.png" display={{base: "none", md: "block"}} alt="" position={"absolute"} right="0" top="0" />
+          {children}
+       </Box>
+        
+    <Footer/>
+   </Box>
+    </Container>
+   
   )
 }

@@ -25,10 +25,10 @@ export default function EcoBasket() {
                         ml={{ base: "25px", md: "46px" }}
                         mr={{ base: "25px", md: "46px" }}
                         position={"relative"}
-                        fontSize={{ base: "55px", md: "121px" }}
+                        fontSize={{ base: "45px", md: "121px" }}
                         textAlign={{ base: "center", md: "left" }}
                         backgroundImage="url('/text-bg.png')"
-                        fontWeight="800"
+                        fontWeight={{base: "600", md: "700"}}
                         bgClip={"text"}
                     >
                         <Image
@@ -37,6 +37,7 @@ export default function EcoBasket() {
                             position="absolute"
                             top={{ base: "2px", md: "15px" }}
                             left={{ base: "22px", md: "-15px" }}
+                            zIndex={"-12"}
                         />
                         eco-Basket
                     </Text>
@@ -63,29 +64,38 @@ export default function EcoBasket() {
                     spacing={"40px"}
                 >
                     <Box
-                       
+                  
                     >
-                        <Center h={"120px"}>
+                        <Center h={"120px"}   maxW={{ base: "100%", md: "xs" }}>
                             <Image w={{base: "90px", md: "90px"}} src="/icon1.png" />
                         </Center>
+                       
                         <Text
-                            mt="15px"
-                            textAlign={{ base: "center", md: "left" }}
-                            maxW={{ base: "100%", md: "xs" }}
-                        >
-                            Ecobasket provides  accessible means of  waste disposal.
-                        </Text>
+                        mt="15px"
+                        textAlign={{ base: "center", md: "left" }}
+                        maxW={{ base: "100%", md: "xs" }}
+                        fontWeight={"300"}
+                        lineHeight={"24px"}
+                        fontSize={"20px"}
+                    >
+                        Ecobasket provides <br/>  accessible means of  waste disposal.
+                    </Text>
+                       
+                       
                     </Box>
                     <Box
                        
                     >
-                        <Center h={"120px"}>
+                        <Center h={"120px"}  maxW={{ base: "100%", md: "xs" }}>
                             <Image w={{base: "90px", md: "118px"}} src="/icon2.png" />
                         </Center>
                         <Text
                             mt="15px"
                             textAlign={{ base: "center", md: "left" }}
                             maxW={{ base: "100%", md: "xs" }}
+                            fontWeight={"300"}
+                            lineHeight={"24px"}
+                            fontSize={"20px"}
                         >
                             it also sensitizes people on the need to keep their environment
                             clean.
@@ -94,13 +104,16 @@ export default function EcoBasket() {
                     <Box
                       
                     >
-                        <Center h={"120px"}>
+                        <Center h={"120px"}  maxW={{ base: "100%", md: "xs" }}>
                             <Image w={{base: "90px", md: "107px"}} src="/icon3.png" />
                         </Center>
                         <Text
                             mt="15px"
                             textAlign={{ base: "center", md: "left" }}
                             maxW={{ base: "100%", md: "xs" }}
+                            fontWeight={"300"}
+                            lineHeight={"24px"}
+                            fontSize={"20px"}
                         >
                             ...and it is completely manufactured with recycled waste.
                         </Text>
@@ -116,7 +129,7 @@ export default function EcoBasket() {
                 </Box>
             </Stack>
           
-            <Box bg={"#F1F9F3"}   mt={{ base: "152px", md: "105px" }} >
+            <Box bg={"#F1F9F3"}  mt={{ base: "152px", md: "105px" }} >
             <Text
           
             ml={{ base: "25px", md: "46px" }}
@@ -124,9 +137,9 @@ export default function EcoBasket() {
             fontSize={{base: "20px", md: "25px"}}
             fontWeight="700"
             color={"#595959"}
-            zIndex={10} pos={"relative"} 
+            pos={"relative"} 
             >
-            <Image src="/glob.png" position={"absolute"} w={{base: "250px", md: "271px"}} zIndex={21} bottom="-12"></Image>
+            <Image src="/glob.png" position={"absolute"} w={{base: "240px", md: "245px"}} zIndex={"-1"} bottom="-12"></Image>
             How you Can Support
             </Text>
 
@@ -141,7 +154,7 @@ export default function EcoBasket() {
                    
                 >
                     <Box>
-                        <Center h={"140px"}>
+                        <Center h={"140px"}  maxW={{ base: "100%", md: "xs" }}>
                             <Image w={{base: "90px", md: "109px"}} src="/icon4.png" />
                         </Center>
                         <Text
@@ -150,16 +163,21 @@ export default function EcoBasket() {
                         color={"#000000"}
                         textAlign={{ base: "center", md: "center" }}
                         mt="20px"
+                        maxW={{ base: "100%", md: "xs" }}
                         >Eco-Ambassador</Text>
                         <Text
                             mt="10px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
+                            fontWeight={"300"}
+                            lineHeight={"24px"}
+                            fontSize={"20px"}
+                            maxW={{ base: "100%", md: "xs" }}
                            
                         >
                         You can simply avoid littering the environment and encourage others to do same.
                         </Text>
                     </Box>
-                    <Box>
+                    <Box  maxW={{ base: "100%", md: "xs" }}>
                         <Center h={"140px"}>
                             <Image  w={{base: "90px", md: "148px"}}  src="/icon5.png" />
                         </Center>
@@ -172,13 +190,17 @@ export default function EcoBasket() {
                         >Eco-Sponsor</Text>
                         <Text
                             mt="10px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
+                            fontWeight={"300"}
+                            lineHeight={"24px"}
+                            fontSize={"20px"}
+                            maxW={{ base: "100%", md: "xs" }}
                            
                         >
                         You can make donation to this cause and get more Eco-baskets out there.<LinkBox as="span" cursor={"pointer"} color= "blue"> Click here</LinkBox>.
                         </Text>
                     </Box>
-                    <Box>
+                    <Box  maxW={{ base: "100%", md: "xs" }}>
                         <Center h={"140px"}>
                             <Image w={{base: "90px", md: "101px"}} src="/icon6.png" />
                         </Center>
@@ -191,7 +213,11 @@ export default function EcoBasket() {
                         >Eco-Daddy</Text>
                         <Text
                             mt="10px"
-                            textAlign={{ base: "center", md: "center" }}
+                            textAlign={{ base: "center", md: "left" }}
+                            fontWeight={"300"}
+                            lineHeight={"24px"}
+                            fontSize={"20px"}
+                            maxW={{ base: "100%", md: "xs" }}
                            
                         >
                         You can also request for the full Eco-Basket design for replication of this product at your own location. <LinkBox as="span" cursor={"pointer"} color= "blue"> Click here</LinkBox>.
@@ -200,7 +226,7 @@ export default function EcoBasket() {
                 </SimpleGrid>
             </Box>
 
-            <Box bgColor={"#FAFAFA"} opacity="1"  mt={{ base: "152px", md: "205px" }}  zIndex={10} pos={"relative"} >
+            <Box bgColor={"#FAFAFA"}  mt={{ base: "152px", md: "205px" }}   pos={"relative"} >
             <Text
             ml={{ base: "25px", md: "46px" }}
             mr={{ base: "25px", md: "46px" }}
@@ -210,7 +236,7 @@ export default function EcoBasket() {
             color={"#595959"}
             position="relative"
             >
-            <Image src="/hand.png" position={"absolute"} w={{base: "250px", md: "271px"}} bottom="-85"  ></Image>
+            <Image src="/hand.png" position={"absolute"} w={{base: "250px", md: "270.11px"}} zIndex={"-1"} bottom="-85"  ></Image>
             Proud Sponsors
             </Text>
 
@@ -271,7 +297,7 @@ export default function EcoBasket() {
                 </SimpleGrid>
             </Box>
           
-            <Box bgColor={"#F1F9F3"}  opacity="1" zIndex={222}   mt={{ base: "152px", md: "205px" }}  pb="20px" >
+            <Box bgColor={"#F1F9F3"}  opacity="1"    mt={{ base: "152px", md: "205px" }}  pb="20px" >
             <Text
             ml={{ base: "25px", md: "46px" }}
             mr={{ base: "25px", md: "46px" }}
@@ -280,10 +306,8 @@ export default function EcoBasket() {
             fontWeight="700"
             color={"#595959"}
             position="relative"
-            
-               
             >
-            <Image src="/leaf3.png" position={"absolute"} w={{base: "250px", md: "300px"}}  bottom="-95" left={"-5"}  ></Image>
+            <Image src="/leaf3.png" position={"absolute"} w={{base: "250px", md: "300px"}} zIndex={"-1"}  bottom="-95" left={"-5"}  ></Image>
             Contact
             </Text>
             

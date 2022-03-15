@@ -42,12 +42,12 @@ export default function NavBar() {
         display={{ base: "none", md: "flex" }}
         direction={"row"}
         bg="background"
-        h={"82px"}
+        h={"60px"}
         pos="relative"
       >
     
         <Box ml={"30px"} pt="18px" boxSize="sm">
-          <Image src="/logo.png" alt="Dan Abramov" />
+          <Image src="/logo.png" mt={"-10px"} alt="Dan Abramov" />
         </Box>
         <Spacer />
         <HStack w="645px" spacing={"105px"}>
@@ -57,7 +57,7 @@ export default function NavBar() {
           fontWeight={"200"}
           lineHeight="30px"
           color="#000000"
-          fontSize={"25px"}
+          fontSize={"20px"}
         >
           About
        </Text>
@@ -67,7 +67,7 @@ export default function NavBar() {
             fontWeight={"200"}
             lineHeight="30px"
             color="#000000"
-            fontSize={"25px"}
+            fontSize={"20px"}
           >
           <LinkBox as={Link} to="/eco-basket">
           Others
@@ -78,7 +78,7 @@ export default function NavBar() {
             fontWeight={"200"}
             lineHeight="30px"
             color="#000000"
-            fontSize={"25px"}
+            fontSize={"20px"}
           >
             Contact
           </Text>

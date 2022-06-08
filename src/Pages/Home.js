@@ -14,7 +14,7 @@ export default function Home() {
         <MainLayout>
             <Seo title='eco-basket' description='eco-basket'/>
         
-            <Text>sdkbcsdkcn</Text>
+           
         </MainLayout>
   )
 }

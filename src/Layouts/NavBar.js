@@ -52,16 +52,6 @@ export default function NavBar() {
         <Spacer />
         <HStack w="645px" spacing={"105px"}>
         
-          <Text
-          onClick={nav}
-          fontWeight={"200"}
-          lineHeight="30px"
-          color="#000000"
-          fontSize={"20px"}
-        >
-          About
-       </Text>
- 
          
           <Text
             fontWeight={"200"}
@@ -70,18 +60,11 @@ export default function NavBar() {
             fontSize={"20px"}
           >
           <LinkBox as={Link} to="/eco-basket">
-          Others
+          Eco-basket
           </LinkBox>
            
           </Text>
-          <Text
-            fontWeight={"200"}
-            lineHeight="30px"
-            color="#000000"
-            fontSize={"20px"}
-          >
-            Contact
-          </Text>
+        
         </HStack>
       </Stack>
 

@@ -155,7 +155,7 @@ export default function EcoBasket() {
                 >
                     <Box>
                         <Center h={"140px"}  maxW={{ base: "100%", md: "xs" }}>
-                            <Image w={{base: "90px", md: "109px"}} src="/icon4.png" />
+                            <Image w={{base: "90px", md: "129px"}} src="/icon4.png" />
                         </Center>
                         <Text
                         fontSize={{base: "15px", md: "20px"}}

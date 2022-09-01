@@ -10,8 +10,8 @@ export default function IndexRoutes() {
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/eco-basket' element={<EcoBasket/>}/>
-            <Route path='/sample' element={<Sample/>}/>
+            <Route path='/ecobasket' element={<EcoBasket/>}/>
+           
         </Routes>
     </BrowserRouter>
   )

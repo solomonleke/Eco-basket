@@ -33,7 +33,7 @@ export default function NavBar() {
 
 
   const nav = ()=>{
-    navigate("/eco-basket")
+    navigate("/ecobasket")
   }
   return (
     <>
@@ -59,7 +59,7 @@ export default function NavBar() {
             color="#000000"
             fontSize={"20px"}
           >
-          <LinkBox as={Link} to="/eco-basket">
+          <LinkBox as={Link} to="/ecobasket">
           Eco-basket
           </LinkBox>
            
@@ -111,34 +111,10 @@ export default function NavBar() {
                   color="gray.gray400"
                   fontSize={"25px"}
                 >
-                  About
+                  Eco-Basket
                 </Text>
               </HStack>
 
-              <HStack color="gray.gray400">
-                <AiOutlineMan fontSize={"20px"} />
-                <Text
-                onClick={nav}
-                  fontWeight={"200"}
-                  lineHeight="30px"
-                  color="gray.gray400"
-                  fontSize={"25px"}
-                >
-                  Others
-                </Text>
-              </HStack>
-              <HStack color="gray.gray400">
-                <AiTwotonePhone fontSize={"20px"} />
-                <Text
-                onClick={nav}
-                  fontWeight={"200"}
-                  lineHeight="30px"
-                  color="gray.gray400"
-                  fontSize={"25px"}
-                >
-                  Contact
-                </Text>
-              </HStack>
             </Stack>
           </DrawerBody>
         </DrawerContent>
